@@ -1,4 +1,10 @@
 "use strict"
+export function getBook(book){
+    return {
+        type:'GET_BOOKS',
+        payload: book
+    }
+}
 
 export function postBook(book){
     return {
