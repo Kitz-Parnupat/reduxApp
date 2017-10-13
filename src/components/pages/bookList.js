@@ -14,9 +14,9 @@ class BookList extends React.Component{
     render(){
        const BookList = this.props.books.map(function(item){
            return (
-                <Col xs={12} sm={6} md={4} key={item.id}>
+                <Col xs={12} sm={6} md={4} key={item._id}>
                     <BookItem 
-                        id={item.id}
+                        id={item._id}
                         title={item.title}
                         description={item.description}
                         price={item.price}/>
